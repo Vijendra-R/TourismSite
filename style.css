@@ -29,3 +29,10 @@
     width: 50%;
     
 }
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    
+}
