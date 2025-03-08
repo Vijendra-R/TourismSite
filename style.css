@@ -1,4 +1,4 @@
-#packages{
+.subtitle{
     margin-top: 30px;
     margin-bottom: 30px;
     justify-items: center;
@@ -20,9 +20,9 @@
     align-items: center;
     background-color: rgba(48, 79, 71, 0.9);
     margin : auto;
-    margin-top: 25px;
+    margin-top: -25px;
     padding: 45px 45px;
-    z-index: 9999px;
+    z-index: 999999px;
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0px 0px 64px rgba(17, 17, 17, 0.1);
@@ -36,3 +36,26 @@
     justify-items: center;
     
 }
+#popular{
+    background: linear-gradient(rgba(245, 245, 245, 0.2) 100%, rgba(245, 245, 245, 0.2) 100%), url(images/achiv-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.custom-card {
+    background-color: #385954; /* Dark green background */
+    color: white; /* White text */
+    text-align: center; /* Center content */
+    padding: 50px; /* Add padding for spacing */
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+
+  .custom-icon {
+    font-size: 5em; /* Adjust icon size */
+    margin-bottom: 20px; /* Space between icon and text */
+  }
+
+  .custom-text {
+    font-size: 1.5em; /* Adjust text size */
+  }
+    
