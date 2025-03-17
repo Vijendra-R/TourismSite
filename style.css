@@ -39,8 +39,7 @@
 #popular{
     background: linear-gradient(rgba(245, 245, 245, 0.2) 100%, rgba(245, 245, 245, 0.2) 100%), url(images/achiv-img.png);
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: center;    
 }
 .custom-card {
     background-color: #385954; /* Dark green background */
