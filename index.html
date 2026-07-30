@@ -5,53 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerala Tourism</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container-fluid bg-success">
-        <div class="container d-flex flex-row bd-highlight text-white justify-content-between">
-            <div class="p-2 bd-highlight">+91 9876543210</div>
-            <div class="p-2 bd-highlight">info@keralatour.com</div>
-            <div class="p-2 bd-highlight">keralatour.com</div>
-          </div>
+
+    <!-- Info Bar -->
+    <div class="container-fluid bg-success py-1">
+        <div class="container d-flex flex-wrap text-white justify-content-between align-items-center">
+            <div class="p-1 fs-6"><i class="fa-solid fa-phone me-2"></i>+91 9876543210</div>
+            <div class="p-1 fs-6"><i class="fa-solid fa-envelope me-2"></i>info@keralatour.com</div>
+            <div class="p-1 fs-6"><i class="fa-solid fa-globe me-2"></i>keralatour.com</div>
+        </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo" width="125px"></a>
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Kerala Tourism Logo" width="125"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold me-3">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#about">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destinations</a>
+                        <a class="nav-link" href="#destinations">Destinations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tour Package</a>
+                        <a class="nav-link" href="#packages">Tour Package</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
+    <!-- slider -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -63,24 +72,24 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active overlay">
-                <img src="/images/banner-1.png" class="d-block w-100" alt="...">
+                <img src="./images/banner-1.png" class="d-block w-100" alt="Kerala Backwaters">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2>Amazing Tour In<br>Kerala </h2>
-                    <h5 style="color: #ff7f47;">7 Days, 8 Night Tour</h5>
+                    <h2 class="display-4 fw-bold">Amazing Tour In<br>Kerala</h2>
+                    <h5 class="highlight-text">7 Days, 8 Night Tour</h5>
                 </div>
             </div>
             <div class="carousel-item overlay">
-                <img src="/images/banner-2.png" class="d-block w-100" alt="...">
+                <img src="./images/banner-2.png" class="d-block w-100" alt="Munnar Tea Gardens">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2>Amazing Tour In<br>Kerala </h2>
-                    <h5 style="color: #ff7f47;">7 Days, 8 Night Tour</h5>
+                    <h2 class="display-4 fw-bold">Explore God's Own<br>Country</h2>
+                    <h5 class="highlight-text">5 Days, 6 Night Tour</h5>
                 </div>
             </div>
             <div class="carousel-item overlay">
-                <img src="/images/banner-3.png" class="d-block w-100" alt="...">
+                <img src="./images/banner-3.png" class="d-block w-100" alt="Kovalam Beach">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2>Amazing Tour In<br>Kerala </h2>
-                    <h5 style="color: #ff7f47;">7 Days, 8 Night Tour</h5>
+                    <h2 class="display-4 fw-bold">Unforgettable<br>Experiences</h2>
+                    <h5 class="highlight-text">10 Days, 11 Night Tour</h5>
                 </div>
             </div>
         </div>
@@ -95,188 +104,239 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-        
+
+    <!-- Booking form -->
     <div id="form1">
-        <form id="form">
-            <input type="text" id="where" name="whereto" placeholder="Where To...">
-            <input type="date" id="date" name="date1">
-            <select name="Travel Type" id="Travel">
-                <option value="" disabled selected>Travel Type</option>
-                <option value="CityTours">City Tours</option>
-                <option value="VacationTours">Vacation Tours</option>
-                <option value="CoupleTours">Couple Tours</option>
-                <option value="AdventureTours">Adventure Tours</option>
-                <option value="GroupTours">Group Tours</option>
-              </select>
-            <input type="submit" value="Submit">
-          </form>
+        <form id="form" class="row g-3">
+            <div class="col-12 col-md-4">
+                <input type="text" class="form-control" id="where" name="whereto" placeholder="Where To...">
+            </div>
+            <div class="col-12 col-md-3">
+                <input type="date" class="form-control" id="date" name="date1">
+            </div>
+            <div class="col-12 col-md-3">
+                <select class="form-select" name="Travel Type" id="Travel">
+                    <option value="" disabled selected>Travel Type</option>
+                    <option value="CityTours">City Tours</option>
+                    <option value="VacationTours">Vacation Tours</option>
+                    <option value="CoupleTours">Couple Tours</option>
+                    <option value="AdventureTours">Adventure Tours</option>
+                    <option value="GroupTours">Group Tours</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-2">
+                <button type="submit" class="btn btn-warning w-100 fw-bold text-white">Find Now</button>
+            </div>
+        </form>
     </div>
-    <section>
-        <div class="subtitle">
-            <h5 style="color: #ff7f47;">Choose Your Package</h5>
-            <h2 style="color: #262339; text-align: center;">Select Your best Package<br>For Your Travel</h2>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="subtitle text-center my-4">
+            <h5 class="highlight-text">Choose Your Package</h5>
+            <h2 class="section-title">Select Your Best Package<br>For Your Travel</h2>
         </div>
         <div class="container">
-            <div class="row mb-4 g-5">
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="./images/p-1.png" alt="" class="card-img-top">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./images/p-1.png" alt="Alappuzha" class="card-img-top">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Alappuzha - Venice of the East</h5>
-                            <a href="#" class="btn btn-primary">Know More</a>
+                            <h5 class="card-title fw-bold">Alappuzha - Venice of the East</h5>
+                            <p class="card-text text-muted">Experience peaceful houseboat stays through the serene backwaters of Alappuzha.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Know More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="./images/p-2.png" alt="" class="card-img-top">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./images/p-2.png" alt="Munnar" class="card-img-top">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Munnar - The Dream Destination</h5>
-                            <a href="#" class="btn btn-primary">Know More</a>
+                            <h5 class="card-title fw-bold">Munnar - The Dream Destination</h5>
+                            <p class="card-text text-muted">Surround yourself with lush green tea plantations, misty mountains, and cool weather.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Know More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="./images/p-3.png" alt="" class="card-img-top">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./images/p-3.png" alt="Kovalam" class="card-img-top">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Kovalam - Pure Magic</h5>
-                            <a href="#" class="btn btn-primary">Know More</a>
+                            <h5 class="card-title fw-bold">Kovalam - Pure Magic</h5>
+                            <p class="card-text text-muted">Relax on pristine beaches with golden sands, palm trees, and clear ocean waves.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Know More</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-4 g-5">
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="./images/p-4.png" alt="" class="card-img-top">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./images/p-4.png" alt="Kochi" class="card-img-top">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Kochi</h5>
-                            <a href="#" class="btn btn-primary">Know More</a>
+                            <h5 class="card-title fw-bold">Kochi - Queen of Arabian Sea</h5>
+                            <p class="card-text text-muted">Explore historic Fort Kochi, iconic Chinese fishing nets, and rich cultural heritage.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Know More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="./images/p-5.png" class="card-img-top">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./images/p-5.png" alt="Guruvayur" class="card-img-top">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Guruvayur</h5>
-                            <a href="#" class="btn btn-primary">Know More</a>
+                            <h5 class="card-title fw-bold">Guruvayur - Spiritual Haven</h5>
+                            <p class="card-text text-muted">Visit one of South India's most vibrant and sacred pilgrimage towns.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Know More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="./images/p-6.png" alt="" class="card-img-top">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./images/p-6.png" alt="Kollam" class="card-img-top">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Kollam</h5>
-                            <a href="#" class="btn btn-primary">Know More</a>
+                            <h5 class="card-title fw-bold">Kollam - Cashew Capital</h5>
+                            <p class="card-text text-muted">Gateway to the backwaters with rich historical architecture and scenic lakes.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Know More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="popular">
-        <div class="subtitle">
-            <h5 style="color: #ff7f47;">Why Kerala Tourism</h5>
-            <h2 style="color: #262339; text-align: center;">Why you are travel with<br>Kerala Tourism</h2>
-        </div>
-        <!-- <div class="container2"> -->
-        <div class="container mb-4">
-            <div class="row">
-                <div class="col col-12 col-md-6 col-lg-4 p-2">
-                    <div class="custom-card mb-4">
-                        <div class="custom-icon">
-                            <img src="images/trust-icon.png" width="150px">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                            </svg> -->
-                        </div>
-                        <div class="custom-text">2000+ Our worldwide</div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-4 p-2">
-                    <div class="custom-card">
-                        <div class="custom-icon">
-                            <img src="images/trust-icon.png" width="150px">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                            </svg> -->
-                        </div>
-                        <div class="custom-text">2000+ Our worldwide</div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-4 p-2">
-                    <div class="custom-card">
-                        <div class="custom-icon">
-                            <img src="images/trust-icon.png" width="150px">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                            </svg> -->
-                        </div>
-                        <div class="custom-text">2000+ Our worldwide</div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-4 p-2">
-                    <div class="custom-card">
-                        <div class="custom-icon">
-                            <img src="images/trust-icon.png" width="150px">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                            </svg> -->
-                        </div>
-                        <div class="custom-text">2000+ Our worldwide</div>
-                    </div>
-                </div>
 
+    <!-- Why Choose Us Section -->
+    <section id="popular" class="py-5">
+        <div class="subtitle text-center mb-5">
+            <h5 class="highlight-text">Why Kerala Tourism</h5>
+            <h2 class="section-title">Why You Should Travel With<br>Kerala Tourism</h2>
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="custom-card h-100">
+                        <div class="custom-icon">
+                            <img src="./images/trust-icon.png" alt="Trusted Brand" width="80">
+                        </div>
+                        <div class="custom-text mt-3">2000+ Happy Travelers Worldwide</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="custom-card h-100">
+                        <div class="custom-icon">
+                            <img src="./images/trust-icon.png" alt="Best Guides" width="80">
+                        </div>
+                        <div class="custom-text mt-3">Experienced & Friendly Local Guides</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="custom-card h-100">
+                        <div class="custom-icon">
+                            <img src="./images/trust-icon.png" alt="Affordable Prices" width="80">
+                        </div>
+                        <div class="custom-text mt-3">Best Price Guarantee & No Hidden Fees</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="custom-card h-100">
+                        <div class="custom-icon">
+                            <img src="./images/trust-icon.png" alt="24/7 Support" width="80">
+                        </div>
+                        <div class="custom-text mt-3">24/7 Customer Service Support</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <div class="container d-flex flex-wrap justify-content-around">
-        <div class="custom-card mb-4 me-3">
-            <div class="custom-icon">
-                <img src="images/trust-icon.png" width="120px">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                </svg> -->
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="subtitle text-center mb-4">
+                <h5 class="highlight-text">Get In Touch</h5>
+                <h2 class="section-title">Plan Your Trip With Us</h2>
             </div>
-            <div class="custom-text">2000+ Our worldwide</div>
-        </div>
-        <div class="custom-card mb-4 me-3">
-            <div class="custom-icon">
-                <img src="images/trust-icon.png" width="120px">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                </svg> -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="card shadow p-4 border-0">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contactName" class="form-label fw-semibold">Your Name</label>
+                                    <input type="text" class="form-control" id="contactName" placeholder="John Doe" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label fw-semibold">Email Address</label>
+                                    <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactPhone" class="form-label fw-semibold">Phone Number</label>
+                                    <input type="tel" class="form-control" id="contactPhone" placeholder="+91 9876543210">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="preferredDestination" class="form-label fw-semibold">Destination</label>
+                                    <input type="text" class="form-control" id="preferredDestination" placeholder="e.g. Munnar, Alappuzha">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label fw-semibold">Message / Travel Details</label>
+                                    <textarea class="form-control" id="contactMessage" rows="4" placeholder="Tell us about your travel plans..." required></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-success btn-lg px-5">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="custom-text">2000+ Our worldwide</div>
         </div>
-        <div class="custom-card mb-4 me-3">
-            <div class="custom-icon">
-                <img src="images/trust-icon.png" width="120px">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                </svg> -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <h4 class="fw-bold text-success mb-3">Kerala Tourism</h4>
+                    <p class="text-secondary-light">Discover God's Own Country with custom tour packages, seamless bookings, and memorable experiences tailored to your budget.</p>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Tour Packages</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="fw-bold mb-3">Top Destinations</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Alappuzha Backwaters</a></li>
+                        <li><a href="#">Munnar Hill Station</a></li>
+                        <li><a href="#">Kovalam Beach</a></li>
+                        <li><a href="#">Wayanad Nature Trails</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3 fs-4 mb-3">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <p class="text-secondary-light mb-0"><i class="fa-solid fa-location-dot me-2"></i>MG Road, Kochi, Kerala</p>
+                </div>
             </div>
-            <div class="custom-text">2000+ Our worldwide</div>
-        </div>
-        <div class="custom-card mb-4 me-3">
-            <div class="custom-icon">
-                <img src="images/trust-icon.png" width="120px">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                </svg> -->
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-secondary-light">
+                <p class="mb-0">&copy; 2026 Kerala Tourism. All Rights Reserved.</p>
             </div>
-            <div class="custom-text">2000+ Our worldwide</div>
         </div>
-    </div>
-        
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
 
